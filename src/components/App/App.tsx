@@ -59,7 +59,7 @@ export default function App() {
 
       {/* {data?.results.length === 0 && toast.error("Фільми за цим запитом не знайдено.")} */}
 
-      <MovieModal movie={selectedMovie} onClose={handleCloseModal} />
+      {selectedMovie && <MovieModal movie={selectedMovie} onClose={handleCloseModal} />}
     </>
   );
 }
